@@ -1,0 +1,118 @@
+@import 'variables';
+@import 'mixins';
+
+.v-typography--display-4 {
+  @include typo-display-4;
+}
+.v-typography--display-4-color-contrast {
+  @include typo-display-4($colorContrast: true);
+}
+.v-typography--display-3 {
+  @include typo-display-3;
+}
+.v-typography--display-3-color-contrast {
+  @include typo-display-3($colorContrast: true);
+}
+.v-typography--display-2 {
+  @include typo-display-2;
+}
+.v-typography--display-2-color-contrast {
+  @include typo-display-2($colorContrast: true);
+}
+.v-typography--display-1 {
+  @include typo-display-1;
+}
+.v-typography--display-1-color-contrast {
+  @include typo-display-1($colorContrast: true);
+}
+.v-typography--headline {
+  @include typo-headline;
+}
+.v-typography--headline-color-contrast {
+  @include typo-headline($colorContrast: true);
+}
+.v-typography--title {
+  @include typo-title;
+}
+.v-typography--title-color-contrast {
+  @include typo-title($colorContrast: true);
+}
+.v-typography--subhead {
+  @include typo-subhead;
+}
+.v-typography--subhead-color-contrast {
+  @include typo-subhead($colorContrast: true);
+}
+.v-typography--body-2 {
+  @include typo-body-2;
+}
+.v-typography--body-2-color-contrast {
+  @include typo-body-2($colorContrast: true);
+}
+.v-typography--body-1 {
+  @include typo-body-1;
+}
+.v-typography--body-1-color-contrast {
+  @include typo-body-1($colorContrast: true);
+}
+.v-typography--caption {
+  @include typo-caption;
+}
+.v-typography--caption-color-contrast {
+  @include typo-caption($colorContrast: true);
+}
+.v-typography--menu {
+  @include typo-menu;
+}
+.v-typography--menu-color-contrast {
+  @include typo-menu($colorContrast: true);
+}
+.v-typography--button {
+  @include typo-button;
+  text-transform: none;
+}
+.v-typography--button-color-contrast {
+  @include typo-button($colorContrast: true);
+}
+.v-typography--text-left {
+  text-align: left;
+}
+.v-typography--text-right {
+  text-align: right;
+}
+.v-typography--text-center {
+  text-align: center;
+}
+.v-typography--text-justify {
+  text-align: justify;
+}
+.v-typography--text-nowrap {
+  white-space: nowrap;
+}
+.v-typography--text-lowercase {
+  text-transform: lowercase;
+}
+.v-typography--text-uppercase {
+  text-transform: uppercase;
+}
+.v-typography--text-capitalize {
+  text-transform: capitalize;
+}
+.v-typography--font-thin {
+  font-weight: 200 !important;
+}
+.v-typography--font-light {
+  font-weight: 300 !important;
+}
+.v-typography--font-regular {
+  font-weight: 400 !important;
+}
+.v-typography--font-medium {
+  font-weight: 500 !important;
+}
+.v-typography--font-bold {
+  font-weight: 700 !important;
+}
+.v-typography--font-black {
+  font-weight: 900 !important;
+}

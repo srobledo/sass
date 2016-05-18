@@ -1,0 +1,26 @@
+/**
+ * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
+ * -----Typography
+ * -----Colors
+ *
+ * Even though all variables have the `!default` directive, most of them
+ * should not be changed as they are dependent one another. This can cause
+ * visual distortions (like alignment issues) that are hard to track down
+ * and fix.
+ */
+
+/* ==========  TYPOGRAPHY  ========== */
+$primary-font: 'proxima-nova-alt', 'Helvetica', 'Arial', sans-serif !default;
+
+/* ==========  COLORS  ========== */
+@import 'color-definitions';
+
+/* ==========  Color & Themes  ========== */
+// TODO Update these with real brand colors.
+$color-primary: $palette-grey-700 !default;
+$color-primary-dark: $palette-grey-900 !default;
+$color-accent: $palette-grey-800 !default;
+
+/* ==========  Typography  ========== */
+$text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
+$text-link-color: unquote("rgb(#{$color-accent})") !default;

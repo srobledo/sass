@@ -1,0 +1,374 @@
+$navbar-margin-bottom:0 !default;
+$navbar-default-link-color: #324047 !default;
+$navbar-default-link-hover-color: #287fc6 !default;
+$navbar-default-link-active-color: #287fc6 !default;
+$navbar-border-radius: 0 !default;
+$navbar-default-bg: #fff !default;
+$navbar-height: 75px !default;
+
+.m-venture-menu {
+  background-color: #282828;
+  color: #fff;
+}
+.m-venture-menu:hover .m-venture-menu_nav li a.active:after {
+  display: none;
+}
+.m-venture-menu .m-venture-menu_nav li a.active:hover:after {
+  display: block;
+}
+@media (max-width: $screen-xs-max) {
+  .m-navbar__right {
+    margin: 59px 0 !important;
+    margin-right: -10px !important;
+    padding-top: 15px;
+  }
+}
+.m-venture-menu_nav {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+  }
+}
+.m-venture-menu_nav-links {
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  padding: 10px 21px 10px 50px;
+  display: inline-block;
+  z-index: 2;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 25px;
+    background-size: 100px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+  &.m-venture-menu_nav-venture {
+    &:before {
+      background-image: url("/assets/images/venture-co-logo-white.svg");
+    }
+    &:hover:before {
+      background: url("/assets/images/venture-co-ico-active.svg") no-repeat 0 0;
+      width: 33px;
+      height: 25px;
+      background-size: 100px;
+      position: absolute;
+      top: 5px;
+    }
+    &:hover {
+      @extend .v-color-text--blue-500;
+    }
+  }
+  &.m-venture-menu_nav-design {
+    margin-left: 30px;
+    padding-left: 42px;
+
+    &:before {
+      background-image: url("/assets/images/designbook-logo-white.svg");
+      width: 21px;
+      background-size: 83px;
+      left: 15px;
+    }
+    &:hover:before {
+      background: url("/assets/images/designbook.svg") no-repeat 0 0;
+      width: 21px;
+      background-size: 83px;
+      left: 15px;
+      padding-right: 10px;
+    }
+    &:hover {
+      color: #fb5c1d !important;
+    }
+  }
+  &.m-venture-menu_nav-pitch {
+    margin-left: 13px;
+
+    &:before {
+      background-image: url("/assets/images/pitch-it-logo-white.svg");
+      margin-bottom: -4px;
+      width: 30px;
+      background-size: 83px;
+    }
+    &:hover:before {
+      background: url("/assets/images/pitchit-vertical-ico-active.svg") no-repeat 0 0;
+      margin-bottom: -4px;
+      width: 30px;
+      background-size: 83px;
+    }
+    &:hover {
+      @extend .v-color-text--red-500;
+    }
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav-links  {
+    padding: 32px 0 10px 3px;
+    font-size: 10px;
+    width: 73px;
+    &:before {
+      left: 23px;
+    }
+    &.m-venture-menu_nav-venture {
+      &:before {
+        width: 26px;
+        background-size: 80px;
+      }
+      &:hover:before {
+        width: 26px;
+        background-size: 80px;
+      }
+    }
+    &.m-venture-menu_nav-design {
+      margin-left: 10px;
+      padding-left: 3px;
+
+      &:before {
+        width: 18px;
+        background-size: 70px;
+        left: 26px;
+        padding-right: 10px;
+      }
+      &:hover:before {
+        width: 18px;
+        background-size: 70px;
+        left: 26px;
+      }
+    }
+    &.m-venture-menu_nav-pitch {
+      width: 51px;
+      margin-left: 10px;
+      padding-left: 6px;
+
+      &:before {
+        width: 24px;
+        background-size: 70px;
+        left: 13px;
+        padding-right: 10px;
+      }
+      &:hover:before {
+        width: 24px;
+        background-size: 70px;
+        left: 13px;
+      }
+    }
+  }
+}
+.m-venture-menu_nav_right-links {
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  &.m-venture-menu_nav_right-links__first:after {
+    content: "";
+    background-color: #fff;
+    display: block;
+    height: 10px;
+    width: 1px;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav_right-links {
+    font-size: 10px;
+  }
+  &.m-venture-menu_nav_right-links__first:after {
+    height: 10px;
+    width: 1px;
+    right: -2px !important;
+    top: 12px !important;
+  }
+}
+.m-venture-mega-menu {
+  position: absolute;
+  width: 50%;
+  left: 205px;
+  background-color: #fff;
+  top: 39px;
+  color: #000;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 0px #9a9a9a;
+  display: none;
+}
+.m-venture-mega-menu__design {
+  left: 15px;
+}
+.m-venture-menu_container {
+  position: relative;
+}
+.m-venture-menu_wrapper {
+  padding: 20px;
+}
+.m-venture-menu_wrapper_button {
+  background: #fe632b !important;
+  color: #fff !important;
+  margin: 40px 0 20px 0;
+  border: 1px solid #fe632b !important;
+  @extend .v-typography--button;
+
+  &:hover {
+    background: #fe632b !important;
+    color: #fff !important;
+    opacity: 0.8;
+  }
+}
+.m-venture-menu_wrapper_button-pitch {
+  background-color: #5cb85c!important;
+  border: 1px solid #5cb85c !important;
+
+  &:hover {
+    background: #5cb85c !important;
+    color: #fff !important;
+    opacity: 0.8;
+  }
+}
+.m-venture-menu_wrapper_button-venture {
+  background-color: rgb(67,137,255);
+  border-color: rgb(67,137,255) !important;
+  color: #fff !important;
+  margin: 40px 0 20px 0;
+  @extend .v-typography--button;
+
+  &:hover {
+    background-color: #176dff;
+    color: #fff;
+    border-color: #176dff;
+  }
+}
+.m-venture-menu_wrapper_image {
+  margin: 0 auto;
+  display: block;
+}
+.m-venture-menu_nav-venture:hover .m-venture-mega-menu {
+  display: block;
+  left: 0;
+}
+@media (min-width: $screen-lg-min) {
+  .m-venture-menu_nav-venture:hover .m-venture-mega-menu {
+   height: 175px;
+   left: 0;
+  }
+}
+@media (max-width: $screen-md-max) {
+  .m-venture-menu_nav-venture:hover .m-venture-mega-menu {
+    height: 225px;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  .m-venture-menu_nav-venture:hover .m-venture-mega-menu {
+    height: 265px;
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav-venture:hover .m-venture-mega-menu {
+    width: 265px;
+    height: 340px;
+    left: 0px !important;
+    top: 56px;
+  }
+}
+
+.m-venture-menu_nav-design:hover .m-venture-mega-menu {
+  display: block;
+}
+@media (min-width: $screen-lg-min) {
+  .m-venture-menu_nav-design:hover .m-venture-mega-menu {
+    height: 175px;
+  }
+}
+@media (max-width: $screen-md-max) {
+  .m-venture-menu_nav-design:hover .m-venture-mega-menu {
+    height: 225px;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  .m-venture-menu_nav-design:hover .m-venture-mega-menu {
+    height: 265px;
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav-design:hover .m-venture-mega-menu {
+    width: 265px;
+    height: 340px;
+    left: 102px;
+    top: 56px;
+  }
+}
+.m-venture-menu_nav-pitch:hover .m-venture-mega-menu {
+  display: block;
+  height: 175px;
+}
+@media (min-width: $screen-lg-min) {
+  .m-venture-menu_nav-pitch:hover .m-venture-mega-menu {
+   height: 175px;
+   left: 372px;
+  }
+}
+@media (max-width: $screen-md-max) {
+  .m-venture-menu_nav-pitch:hover .m-venture-mega-menu {
+    height: 225px;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  .m-venture-menu_nav-pitch:hover .m-venture-mega-menu {
+    height: 295px;
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav-pitch:hover .m-venture-mega-menu {
+    height: 355px;
+    left: 102px;
+    top: 56px;
+    width: 265px;
+  }
+}
+.m-venture-menu_nav li:hover a.m-venture-menu_nav-links {
+  background-color: #363636;
+  color: #fff;
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav li:hover a.m-venture-menu_nav-links {
+    background-color: transparent;
+  }
+}
+.m-venture-menu_nav li a.active,
+.m-venture-menu_nav li:hover a.m-venture-menu_nav-links {
+  background-color: #363636;
+  color: #fff;
+  transition: initial !important;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 8.5px 0 8.5px;
+    border-color: #363636 transparent transparent transparent;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .m-venture-menu_nav li a.active {
+    background-color: transparent;
+  }
+}
+.m-venture-menu_nav_right{
+  span:hover{
+    color: #005bf7;
+    cursor: pointer;
+  }
+}

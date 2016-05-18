@@ -1,0 +1,140 @@
+.m-venture-footer__color-dark {
+  background-color: #282828;
+  position: relative;
+  z-index: 4;
+}
+.m-venture-footer-top {
+  @extend .v-typography--text-center;
+  @extend .v-color-text--white;
+  border-bottom: 1px solid #636363;
+  padding-bottom: 35px;
+}
+.m-venture-footer__icon {
+  @extend .v-typography--text-uppercase;
+  @extend .v-typography--text-center;
+  @extend .v-color-text--white;
+  border-bottom: 1px solid #636363;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-top: 0;
+  line-height: normal;
+}
+@media (max-width: $screen-sm-max) {
+  .m-venture-footer__icon {
+    margin-top: 20px;
+  }
+}
+.m-venture-footer__icon-link {
+  @extend .v-color-text--white;
+  @extend .v-typography--text-center;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.m-venture-footer__venture-icon-link {
+  &:hover {
+    @extend .v-color-text--blue-500;
+  }
+}
+.m-venture-footer__designbook-icon-link {
+  &:hover {
+    color: #fb5c1d !important;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  .m-venture-footer__icon-links {
+    margin: 0 5px;
+  }
+}
+.m-venture-footer__icon {
+  &:before {
+    content: "";
+    display: inline-block;
+    margin-right: 7px;
+  }
+  &.m-venture-footer-icon__venture {
+    &:before {
+      background: url("/assets/images/venture-co-logo-white.svg") no-repeat 0 0;
+      width: 23px;
+      height: 16px;
+      background-size: 70px;
+    }
+    &:hover:before {
+      background: url("/assets/images/venture-co-ico-active.svg") no-repeat 0 0;
+      width: 23px;
+      height: 16px;
+      background-size: 70px;
+    }
+    &:hover {
+      @extend .v-color-text--blue-500;
+    }
+  }
+  &.m-venture-footer-icon__designbook {
+    &:before {
+      background: url("/assets/images/designbook-logo-white.svg") no-repeat 0 0;
+      margin-bottom: -2px;
+      width: 16px;
+      height: 19px;
+      background-size: 63px;
+    }
+    &:hover:before {
+      background: url("/assets/images/designbook.svg") no-repeat 0 0;
+      margin-bottom: -2px;
+      width: 16px;
+      height: 19px;
+      background-size: 63px;
+    }
+    &:hover {
+      color: #fb5c1d !important;
+    }
+  }
+  &.m-venture-footer-icon__pitchit {
+    &:before {
+      background: url("/assets/images/pitch-it-logo-white.svg") no-repeat 0 0;
+      width: 20px;
+      height: 20px;
+      margin-bottom: -4px;
+      background-size: 61px;
+    }
+    &:hover:before {
+      background: url("/assets/images/pitchit-vertical-ico-active.svg") no-repeat 0 0;
+      margin-bottom: -4px;
+      width: 20px;
+      height: 20px;
+      background-size: 61px;
+    }
+    &:hover {
+      @extend .v-color-text--red-500;
+    }
+  }
+}
+.m-venture-footer-bottom {
+  margin: 20px 0;
+  @extend .v-typography--text-center;
+}
+.m-venture-footer__bottom-link {
+  @extend .v-typography--body-1;
+  @extend .v-typography--text-uppercase;
+  @extend .v-color-text--white;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 40px;
+
+  &:hover {
+    @extend .v-color-text--blue-500;
+  }
+}
+.m-venture-footer-disclaimer {
+  @extend .v-color-text--white;
+  @extend .v-typography--font-thin;
+  @extend .v-typography--caption;
+  letter-spacing: .02em !important;
+  line-height: 16px !important;
+  opacity: .54;
+}
+.m-venture-footer-disclaimer__link {
+  color: #009ae1;
+}
